@@ -1,0 +1,67 @@
+1. For Client A Bank
+  POST API: http://localhost:8081/clientA/bank/transaction
+  1. a. { 
+"customerId": 9876543201,
+"fromAccount": "1234567882",
+"toAccount": "1234567881",
+"amount": 500.25,
+"currency": "INR" 
+}
+
+1. b. { 
+"customerId": 9876543201,
+"fromAccount": "1234567882",
+"toAccount": "1234567881",
+"amount": 50000000.25,
+"currency": "INR" 
+}
+
+
+
+
+
+2. For Client B Bank
+  POST API: http://localhost:8082/clientB/bank/transaction
+  2. a. { 
+"customerId": 9876543201,
+"fromAccount": "1234567882",
+"toAccount": "1234567881",
+"amount": 500.25,
+"currency": "INR" 
+}
+
+2. b. { 
+"customerId": 9876543201,
+"fromAccount": "1234567882",
+"toAccount": "1234567881",
+"amount": 50000000.25,
+"currency": "INR" 
+}
+
+
+
+
+
+3. For direct Server
+  POST API: http://localhost:8083/server/transaction/process
+  3. a. <TransactionRequest> 
+<TrxId>TRX-20250923-000002</TrxId> 
+<BankId>BANK_A</BankId> 
+<CustomerId>9876543201</CustomerId> 
+<FromAccount>1234567881</FromAccount> 
+<ToAccount>1234567882</ToAccount> 
+<Amount>500.75</Amount> 
+<Currency>INR</Currency> 
+<Timestamp>2025-09-23T15:41:32.456+05:30</Timestamp> 
+</TransactionRequest>
+
+  3. b. <TransactionRequest> 
+<TrxId>TRX-20250923-000002</TrxId> 
+<BankId>BANK_A</BankId> 
+<CustomerId>9876543201</CustomerId> 
+<FromAccount>1234567881</FromAccount> 
+<ToAccount>1234567882</ToAccount> 
+<Amount>5000000.75</Amount> 
+<Currency>INR</Currency> 
+<Timestamp>2025-09-23T15:41:32.456+05:30</Timestamp> 
+</TransactionRequest>
