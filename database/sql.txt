@@ -1,4 +1,4 @@
-//Start Spring Boot server application and go to browser and search "http://localhost:8083/h2-console" login window will click connect and run this query.
+//Start Spring Boot server application and go to browser and search "http://localhost:8083/h2-console" login window will open then click connect and run this query.
 
 INSERT INTO customer_details (account_No, customer_Id, bank_Id, balance, currency) VALUES
 (1234567881, 892341, 'Bank_A', 1500.75, 'INR'),
