@@ -1,0 +1,13 @@
+//Start Spring Boot server application and got to browser and search "http://localhost:8083/h2-console" login window will click connect and run this query.
+
+INSERT INTO customer_details (account_No, customer_Id, bank_Id, balance, currency) VALUES
+(1234567881, 892341, 'Bank_A', 1500.75, 'INR'),
+(1234567882, 892342, 'Bank_A', 2300.00, 'INR'),
+(1234567883, 892343, 'Bank_B', 980.50,  'INR'),
+(1234567884, 892344, 'Bank_B', 12000.00,'INR'),
+(1234567885, 892345, 'Bank_B', 450.25,  'INR'),
+(1234567886, 892346, 'Bank_A', 8750.00, 'INR'),
+(1234567887, 892347, 'Bank_A', 6400.90, 'INR'),
+(1234567888, 892348, 'Bank_A', 300.00,  'INR'),
+(1234567889, 892349, 'Bank_B', 9999.99, 'INR'),
+(1234567890, 892350, 'Bank_B', 50.00, 'INR');
